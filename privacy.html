@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - KPIMS AutoFill</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #0f172a;
+      --text-muted: #475569;
+      --primary: #2563eb;
+      --border: #e2e8f0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.7;
+      color: var(--text);
+      background-color: var(--bg);
+      margin: 0;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border);
+    }
+    h1 {
+      font-size: 28px;
+      color: var(--text);
+      margin-top: 0;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 12px;
+    }
+    h2 {
+      font-size: 20px;
+      color: var(--primary);
+      margin-top: 28px;
+    }
+    p, li {
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .badge {
+      display: inline-block;
+      background: #eff6ff;
+      color: var(--primary);
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--text-muted);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <span class="badge">นโยบายความเป็นส่วนตัว / Privacy Policy</span>
+    <h1>KPIMS AutoFill</h1>
+    <p><strong>วันที่มีผลบังคับใช้ (Effective Date):</strong> 8 ตุลาคม 2026</p>
+
+    <h2>1. ข้อมูลทั่วไป (Overview)</h2>
+    <p>
+      ส่วนขยาย <strong>KPIMS AutoFill</strong> ได้รับการพัฒนาขึ้นเพื่ออำนวยความสะดวกให้แก่เจ้าหน้าที่ในการนำข้อมูลกิจกรรมและนัดหมายจาก Google Calendar มาจัดทำและบันทึกรายงานผลการปฏิบัติงานรายวันบนระบบ KPIMS+ อย่างรวดเร็วและถูกต้อง
+    </p>
+
+    <h2>2. ข้อมูลที่เข้าถึงและจัดเก็บ (Data Accessed & Stored)</h2>
+    <p>แอปพลิเคชันจะขอสิทธิ์เข้าถึงเฉพาะข้อมูลที่จำเป็นต่อการปฏิบัติงานเท่านั้น:</p>
+    <ul>
+      <li><strong>Google Calendar Data (Read-Only):</strong> ข้อมูลชื่อกิจกรรม (Summary) และวันเวลา (Start/End Time) จากปฏิทินที่ผู้ใช้เลือก โดยใช้สิทธิ์ <code>https://www.googleapis.com/auth/calendar.readonly</code> เพื่อนำมาแสดงผลและกรอกลงในแบบฟอร์ม</li>
+      <li><strong>Local Storage:</strong> ข้อมูล Access Token, การตั้งค่าการใช้งาน และรายการงานที่ประมวลผลแล้ว จะถูกจัดเก็บไว้ในหน่วยความจำของเบราว์เซอร์ผู้ใช้ (<code>chrome.storage.local</code> / <code>localStorage</code>) ในเครื่องของคุณเท่านั้น</li>
+    </ul>
+
+    <h2>3. การใช้งานและการเปิดเผยข้อมูล (Data Use & Disclosure)</h2>
+    <ul>
+      <li><strong>ไม่มีการส่งข้อมูลไปยังเซิร์ฟเวอร์ภายนอกของผู้พัฒนา:</strong> โค้ดของส่วนขยายทำงานบนเครื่องของผู้ใช้งานโดยตรง (Client-Side Only)</li>
+      <li><strong>ไม่มีการขายหรือเผยแพร่ข้อมูล:</strong> ข้อมูลปฏิทินและกิจกรรมของผู้ใช้จะไม่ถูกขาย แบ่งปัน หรือนำไปใช้เพื่อวัตถุประสงค์ในการโฆษณา การตลาด หรือติดตามพฤติกรรมโดยเด็ดขาด</li>
+      <li><strong>การประมวลผลด้วย AI (ถ้ามี):</strong> หากผู้ใช้เลือกเปิดใช้งานฟังก์ชันแปลงภาษาทางการด้วย AI ข้อมูลชื่อกิจกรรมจะถูกส่งไปยัง AI Endpoint ที่ผู้ใช้เป็นผู้ระบุและตั้งค่าด้วยตนเองเท่านั้น</li>
+    </ul>
+
+    <h2>4. การปฏิบัติตามนโยบายข้อมูลผู้ใช้ของ Google (Google User Data Policy)</h2>
+    <p>
+      การเข้าถึงและใช้งานข้อมูลที่ได้รับจาก Google APIs ของส่วนขยายนี้ เป็นไปตาม <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a> รวมถึงข้อกำหนดการใช้งานแบบจำกัดสิทธิ์ (Limited Use requirements)
+    </p>
+
+    <h2>5. การลบข้อมูลและยกเลิกสิทธิ์ (Data Revocation & Deletion)</h2>
+    <p>
+      ผู้ใช้สามารถลบข้อมูลแคชทั้งหมดได้ตลอดเวลาผ่านปุ่ม "ล้างแคช" บนส่วนขยาย หรือถอนการติดตั้งส่วนขยายออกจาก Google Chrome นอกจากนี้ ผู้ใช้สามารถเพิกถอนสิทธิ์การเข้าถึงได้ทุกเมื่อที่ <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google Account Security Permissions</a>
+    </p>
+
+    <h2>6. การติดต่อ (Contact Us)</h2>
+    <p>หากมีข้อสงสัยเกี่ยวกับนโยบายความเป็นส่วนตัวนี้ สามารถติดต่อผู้พัฒนาได้ที่:</p>
+    <ul>
+      <li><strong>GitHub Repository:</strong> <a href="https://github.com/quutamo888/kpims_plus" target="_blank" rel="noopener">https://github.com/quutamo888/kpims_plus</a></li>
+    </ul>
+
+    <div class="footer">
+      &copy; 2026 KPIMS+ AutoFill Assistant. All rights reserved.
+    </div>
+  </div>
+</body>
+</html>
